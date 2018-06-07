@@ -11,7 +11,7 @@ after_script:
   - cd github.piccuss.io/source/_posts/
   - git add .
   - git commit -m"Travis auto commit"
-  - git push --force "https://${GH_TOKEN}@${GH_REF}/Demo" hexo:hexo
+  - git push --force "https://${GH_TOKEN}@${GH_REF}/github.piccuss.io" hexo:hexo
 
 
 env:
