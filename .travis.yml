@@ -3,15 +3,16 @@ jdk:
   - oraclejdk8
 
 before_install:
-  - git clone https://${GH_REF}/github.piccuss.io.git
+  - git clone https://${GH_REF}/piccuss.github.io.git
 script:
   - mvn test
 
 after_script:
-  - cd github.piccuss.io/source/_posts/
+  - cd piccuss.github.io/source/_posts/
+  - git checkout -b hexo origin/hexo
   - git add .
   - git commit -m"Travis auto commit"
-  - git push --force "https://${GH_TOKEN}@${GH_REF}/github.piccuss.io" hexo:hexo
+  - git push --force "https://${GH_TOKEN}@${GH_REF}/piccuss.github.io" hexo:hexo
 
 
 env:

@@ -8,7 +8,7 @@ public class YandeTest {
     @Test
     public void test() {
         YandeToday yandeToday = YandeToday.newDay();
-        yandeToday.saveMarkdown("github.piccuss.io/source/_posts/");
+        yandeToday.saveMarkdown("piccuss.github.io/source/_posts/");
     }
 
 }
