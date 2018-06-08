@@ -271,8 +271,9 @@ public class Post {
         list.add("Tags: " + tags);
         list.add("Size: " + width + "×" + height);
         list.add("Md5: " + md5);
-        list.add("Sample: " + new Image("sample", sample_url).markdownSerialized());
+        list.add("Sample: ");
         markdownBuilder.addList(list);
+        markdownBuilder.addImage("sample", preview_url, Image.ALIGN_CENTER);
 
         return markdownBuilder.toString();
     }
