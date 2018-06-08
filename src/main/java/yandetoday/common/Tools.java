@@ -16,4 +16,8 @@ public class Tools {
     public static String nowForFile() {
         return formatDate(System.currentTimeMillis(), "yyMMdd");
     }
+
+    public static String nowForTitle() {
+        return formatDate(System.currentTimeMillis(), "yyyy-MM-dd");
+    }
 }

@@ -52,7 +52,8 @@ public class YandeToday {
     public String getMarkdown() {
         MarkdownBuilder markdownBuilder = new MarkdownBuilder();
         markdownBuilder.addText("---\n" +
-                "title: {{ Yande Today " + Tools.now() + "}}\n" +
+                "title: Yande Today " + Tools.now() + "\n" +
+                "date: " + Tools.nowForTitle() + "\n" + 
                 "---");
         markdownBuilder.addHeader("Yande Today - " + Tools.now());
         for (Post post : this.posts) {
